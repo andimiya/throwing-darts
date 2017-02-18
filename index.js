@@ -26,9 +26,12 @@ function scoreThrows(array) {
 //if between 5 and 10, then 5 points
 //if less than 5, 10 points
   console.log(score);
+  return score;
 
 }
 
 scoreThrows([1, 5, 11]);  // returns 15
 scoreThrows([15, 20, 30]); // return 0
 scoreThrows([1, 2, 3, 4]); // returne 140
+
+module.exports = scoreThrows;
