@@ -5,18 +5,18 @@ function scoreThrows(array) {
   for (var i = 0; i < array.length; i++) {
 
     if (array[i] > 10) {
-      score = score + 0;
+      score += 0;
     }
     else if (array[i] >= 5 && array[i] <=10 ) {
-      score = score + 5;
+      score += 5;
     }
     else if (array[i] < 5) {
-      score = score + 10;
+      score += 10;
       bonus++;
     }
   }
 
-  if (bonus === array.length && bonus !== 0) {
+  if (bonus === 4) {
     score = score + 100;
   }
 
