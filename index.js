@@ -1,21 +1,24 @@
 
 function scoreThrows(array) {
   let score = 0;
+  let bonus = 0;
 
   for (var i = 0; i < array.length; i++) {
 
     if (array[i] > 10) {
       score = score + 0;
-      console.log('no score', score);
     }
     else if (array[i] >= 5 && array[i] <=10 ) {
       score = score + 5;
-      console.log('adds 5', score);
     }
     else if (array[i] < 5) {
       score = score + 10;
-      console.log('adds 10', score);
+      bonus++;
     }
+  }
+
+  if (bonus === 4) {
+    score = score + 100;
   }
 
 //for each dart thrown...
